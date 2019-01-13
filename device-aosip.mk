@@ -50,6 +50,10 @@ TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys-intf/display
 
+# Trust HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
+
 # Vendor packages
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6-impl-google.vendor:64 \
