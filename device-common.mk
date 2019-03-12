@@ -34,6 +34,10 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.audio.offload.buffer.size.kb=256
 PRODUCT_PACKAGES += \
     SystemUIGoogle
 
+# LMK
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.lmk.use_psi=true
+
 # Enable AAudio MMAP/NOIRQ data path.
 # 1 is AAUDIO_POLICY_NEVER  means only use Legacy path.
 # 2 is AAUDIO_POLICY_AUTO   means try MMAP then fallback to Legacy path.
