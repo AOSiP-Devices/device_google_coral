@@ -964,3 +964,5 @@ endif
 # Write flags to the vendor space in /misc partition.
 PRODUCT_PACKAGES += \
     misc_writer
+
+WITH_GMS_FI := true
