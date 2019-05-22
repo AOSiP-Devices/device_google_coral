@@ -966,3 +966,6 @@ PRODUCT_PACKAGES += \
     misc_writer
 
 WITH_GMS_FI := true
+
+PRODUCT_COPY_FILES += \
+    device/google/coral/permissions/privapp-permissions-aosp-extended.xml:system/etc/permissions/privapp-permissions-aosp-extended.xml
