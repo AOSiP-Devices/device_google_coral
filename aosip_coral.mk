@@ -47,6 +47,8 @@ BUILD_FINGERPRINT := "google/coral/coral:10/QQ1D.200205.002/6084393:user/release
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/coral/coral:10/QQ1D.200205.002/6084393:user/release-keys
 
+WITH_GMS_FI := true
+
 BOARD_PREBUILT_VENDORIMAGE := vendor/images/coral/vendor.img
 
 $(call inherit-product-if-exists, vendor/google/coral/coral-vendor.mk)
