@@ -18,3 +18,7 @@ LOCAL_PATH := device/google/coral
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-aosip
+
+# Partitions
+AB_OTA_PARTITIONS += \
+    vendor

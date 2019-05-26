@@ -31,4 +31,10 @@ TARGET_KERNEL_CONFIG := floral_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/floral
 TARGET_NEEDS_DTBOIMAGE := true
 
+# Partitions
+ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
+BOARD_VENDORIMAGE_PARTITION_SIZE := 744660992
+endif
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
 -include vendor/google/coral/BoardConfigVendor.mk
