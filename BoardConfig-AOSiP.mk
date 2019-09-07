@@ -14,4 +14,8 @@
 # limitations under the License.
 #
 
+# Verified Boot
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
+
 -include vendor/google/coral/BoardConfigVendor.mk
