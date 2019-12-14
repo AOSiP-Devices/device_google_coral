@@ -1,0 +1,7 @@
+[
+ {
+   "repository":  "device_google_coral-sepolicy",
+   "target_path": "device/google/coral-sepolicy",
+   "branch":      "ten"
+ }
+]
