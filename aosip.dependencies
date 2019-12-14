@@ -1,0 +1,17 @@
+[
+ {
+   "repository":  "device_google_coral-sepolicy",
+   "target_path": "device/google/coral-sepolicy",
+   "branch":      "eleven"
+ },
+ {
+   "repository":  "kernel_google_floral",
+   "target_path": "kernel/google/floral",
+   "branch":      "eleven"
+ },
+ {
+   "repository":  "vendor_google",
+   "target_path": "vendor/google",
+   "branch":      "eleven"
+ }
+]
