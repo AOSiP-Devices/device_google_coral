@@ -622,4 +622,7 @@
     <!-- Device is Soli equipped -->
     <bool name="config_has_Soli">true</bool>
 
+    <!-- Whether or not aware is enabled by default -->
+    <bool name="config_awareSettingAvailable">true</bool>
+
 </resources>
