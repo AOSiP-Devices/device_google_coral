@@ -20,4 +20,10 @@
          devices will be able to vary their amplitude but do not possess enough dynamic range to
          have distinct intensity levels -->
     <bool name="config_vibration_supports_multiple_intensities">true</bool>
+
+    <!-- Fully-qualified class name for the implementation of the FeatureFactory to be instantiated. -->
+    <string name="config_featureFactory" translatable="false">com.google.android.settings.overlay.FeatureFactoryImpl</string>
+
+    <!-- When true enable gesture setting. -->
+    <bool name="config_gesture_settings_enabled">true</bool>
 </resources>
