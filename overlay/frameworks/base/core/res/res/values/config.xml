@@ -620,4 +620,7 @@
     <!-- Disable AOD by default -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
+    <!-- Device is Soli equipped -->
+    <bool name="config_has_Soli">true</bool>
+
 </resources>
