@@ -30,6 +30,10 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.audio_hal.period_multiplier=2
 PRODUCT_PROPERTY_OVERRIDES += af.fast_track_multiplier=1
 PRODUCT_PROPERTY_OVERRIDES += vendor.audio.offload.buffer.size.kb=256
 
+# Google Device
+PRODUCT_PACKAGES += \
+    SystemUIGoogle
+
 # Enable AAudio MMAP/NOIRQ data path.
 # 1 is AAUDIO_POLICY_NEVER  means only use Legacy path.
 # 2 is AAUDIO_POLICY_AUTO   means try MMAP then fallback to Legacy path.
