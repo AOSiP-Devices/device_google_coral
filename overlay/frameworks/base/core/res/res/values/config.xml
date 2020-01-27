@@ -625,4 +625,7 @@
     <!-- Whether or not aware is enabled by default -->
     <bool name="config_awareSettingAvailable">true</bool>
 
+    <!-- Does the device have a notification/battery LED? -->
+    <bool name="config_deviceHasLED">false</bool>
+
 </resources>
