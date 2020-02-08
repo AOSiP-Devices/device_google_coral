@@ -22,8 +22,8 @@
  },
  {
    "remote":      "gitlab",
-   "repository":  "DirtyUnicorns/android_vendor_pixelgapps",
+   "repository":  "xlxfoxxlx/android_vendor_pixelgapps",
    "target_path": "vendor/pixelgapps",
-   "branch":      "q10x"
+   "branch":      "ten"
  }
 ]
