@@ -116,6 +116,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     dmabuf_dump
 
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # Set thermal warm reset
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.thermal_warmreset = true \
