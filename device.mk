@@ -75,6 +75,9 @@ PRODUCT_PACKAGES += \
     ims_ext_common.xml \
     telephony-ext
 
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 
 $(call inherit-product, $(LOCAL_PATH)/utils.mk)
