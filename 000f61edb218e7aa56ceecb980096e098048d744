@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d3125f7c_d70e9cd2",
+        "filename": "overlay/frameworks/base/packages/SystemUI/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000075
+      },
+      "writtenOn": "2020-02-12T06:25:41Z",
+      "side": 1,
+      "message": "you don\u0027t need to overlay this value since default is 60 🤔",
+      "revId": "000f61edb218e7aa56ceecb980096e098048d744",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    }
+  ]
+}
