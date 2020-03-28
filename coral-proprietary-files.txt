@@ -71,6 +71,7 @@ product/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so
 
 # NGA
 product/etc/sysconfig/nga.xml
+-product/app/NgaResources/NgaResources.apk;PRESIGNED
 
 # Now Playing
 product/etc/firmware/music_detector.descriptor
