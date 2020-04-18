@@ -31,6 +31,8 @@ $(call inherit-product, device/google/coral/aosp_coral.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
+include device/google/coral/device-aosip.mk
+
 PRODUCT_NAME := aosip_coral
 PRODUCT_DEVICE := coral
 PRODUCT_BRAND := google
@@ -46,8 +48,6 @@ BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys
-
-BOARD_PREBUILT_VENDORIMAGE := vendor/images/coral/vendor.img
 
 $(call inherit-product-if-exists, vendor/google/coral/coral-vendor.mk)
 $(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
