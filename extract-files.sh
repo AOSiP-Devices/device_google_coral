@@ -70,5 +70,7 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${AOSIP_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}"/proprietary-files.txt "${SRC}" \
         --section "${SECTION}"
+extract "${MY_DIR}"/proprietary-files-vendor.txt "${SRC}" \
+        --section "${SECTION}"
 
 "${MY_DIR}"/setup-makefiles.sh

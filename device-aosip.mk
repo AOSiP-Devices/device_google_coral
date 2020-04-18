@@ -22,3 +22,38 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-aosip
 # Partitions
 AB_OTA_PARTITIONS += \
     vendor
+
+# Vendor packages
+PRODUCT_PACKAGES += \
+    ese_spi_st \
+    hardware.google.light@1.0.vendor \
+    libcamera2ndk_vendor \
+    libcld80211 \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_vndk.vendor \
+    libdrm.vendor \
+    libmedia_ecoservice.vendor \
+    libnetfilter_conntrack \
+    libnfnetlink \
+    libnos \
+    libnos_client_citadel \
+    libnos_datagram \
+    libnos_datagram_citadel \
+    libnosprotos \
+    libnos_transport \
+    libqti_vndfwk_detect.vendor \
+    libsensorndkbridge \
+    libstagefright_bufferpool@2.0.1.vendor \
+    libtextclassifier_hash.vendor \
+    libtinycompress \
+    nos_app_avb \
+    nos_app_keymaster \
+    nos_app_weaver \
+    sound_trigger.primary.msmnile \
+    vendor.display.config@1.0.vendor \
+    vendor.display.config@1.1.vendor \
+    vendor.display.config@1.2.vendor \
+    vendor.display.config@1.3.vendor \
+    vendor.qti.hardware.display.allocator@3.0.vendor \
+    vendor.qti.hardware.display.mapper@3.0.vendor \
+    vendor.qti.hardware.display.mapperextensions@1.0.vendor
