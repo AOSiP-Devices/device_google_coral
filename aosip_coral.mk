@@ -33,7 +33,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 PRODUCT_NAME := aosip_coral
 PRODUCT_DEVICE := coral
-PRODUCT_BRAND := Google
+PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4 XL
 PRODUCT_MANUFACTURER := Google
 
