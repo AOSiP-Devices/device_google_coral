@@ -27,6 +27,7 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     MKDTIMG=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/mkdtimg
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := latest
 TARGET_KERNEL_CONFIG := floral_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/floral
 TARGET_NEEDS_DTBOIMAGE := true
