@@ -34,6 +34,10 @@ PRODUCT_COPY_FILES += \
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat
+
 # Vendor packages
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6-impl-google.vendor:64 \
@@ -65,7 +69,6 @@ PRODUCT_PACKAGES += \
     libnosprotos:64 \
     libnos:64 \
     libnos_transport:64 \
-    libprotobuf-cpp-full.vendor \
     librmnetctl \
     libqti_vndfwk_detect.vendor \
     libsensorndkbridge \
