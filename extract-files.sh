@@ -42,8 +42,8 @@ while [ "$1" != "" ]; do
                                 SECTION=$1
                                 CLEAN_VENDOR=false
                                 ;;
-        --coral )              shift
-                                CORAL_SRC=$1
+        * )                     shift
+                                SRC=$1
                                 ;;
     esac
     shift
@@ -67,6 +67,6 @@ function blob_fixup() {
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$AOSIP_ROOT" false "$CLEAN_VENDOR"
 
-extract "$MY_DIR"/coral-proprietary-files.txt "$CORAL_SRC" "$SECTION"
+extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
 "$MY_DIR"/setup-makefiles.sh

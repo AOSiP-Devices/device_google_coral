@@ -45,7 +45,7 @@ sed -i 's|vendor/google/|vendor/google/coral|g' $PRODUCTMK
 sed -i 's|device/google//setup-makefiles.sh|device/google/coral/setup-makefiles.sh|g' $ANDROIDBP $ANDROIDMK $BOARDMK $PRODUCTMK
 
 
-write_makefiles "$MY_DIR"/coral-proprietary-files.txt true
+write_makefiles "$MY_DIR"/proprietary-files.txt true
 
 cat << EOF >> "$ANDROIDMK"
 EOF
