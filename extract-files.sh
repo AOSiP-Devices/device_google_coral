@@ -23,33 +23,34 @@ VENDOR=google
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
-if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
+if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-AOSIP_ROOT="$MY_DIR"/../../..
+AOSIP_ROOT="${MY_DIR}"/../../..
 
-HELPER="$AOSIP_ROOT"/vendor/aosip/build/tools/extract_utils.sh
-if [ ! -f "$HELPER" ]; then
-    echo "Unable to find helper script at $HELPER"
+HELPER="${AOSIP_ROOT}"/vendor/aosip/build/tools/extract_utils.sh
+if [ ! -f "${HELPER}" ]; then
+    echo "Unable to find helper script at ${HELPER}"
     exit 1
 fi
-. "$HELPER"
+source "${HELPER}"
 
-while [ "$1" != "" ]; do
-    case $1 in
-        -n | --no-cleanup )     CLEAN_VENDOR=false
-                                ;;
-        -s | --section )        shift
-                                SECTION=$1
-                                CLEAN_VENDOR=false
-                                ;;
-        --coral )              shift
-                                CORAL_SRC=$1
-                                ;;
+while [ "${#}" -gt 0 ]; do
+    case "${1}" in
+        -n | --no-cleanup )
+                CLEAN_VENDOR=false
+                ;;
+        -s | --section )
+                SECTION="${2}"; shift
+                CLEAN_VENDOR=false
+                ;;
+        * )
+                SRC="${1}"
+                ;;
     esac
     shift
 done
 
-if [ -z "$SRC" ]; then
+if [ -z "${SRC}" ]; then
     SRC=adb
 fi
 
@@ -65,8 +66,9 @@ function blob_fixup() {
 }
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$AOSIP_ROOT" false "$CLEAN_VENDOR"
+setup_vendor "${DEVICE}" "${VENDOR}" "${AOSIP_ROOT}" false "${CLEAN_VENDOR}"
 
-extract "$MY_DIR"/coral-proprietary-files.txt "$CORAL_SRC" "$SECTION"
+extract "${MY_DIR}"/proprietary-files.txt "${SRC}" \
+        --section "${SECTION}"
 
-"$MY_DIR"/setup-makefiles.sh
+"${MY_DIR}"/setup-makefiles.sh
