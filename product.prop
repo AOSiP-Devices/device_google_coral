@@ -106,3 +106,5 @@ persist.radio.rat_on=combine
 persist.radio.data_ltd_sys_ind=1
 persist.radio.data_con_rprt=1
 persist.radio.calls.on.ims=1
+
+persist.device_config.runtime_native.usap_pool_enabled=true
