@@ -1,0 +1,10 @@
+# DRM
+drm.service.enabled=true
+media.mediadrmservice.enable=true
+
+# Gesture Nav
+ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
+# Graphics
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno

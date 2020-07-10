@@ -23,6 +23,9 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-aosip
 AB_OTA_PARTITIONS += \
     vendor
 
+# Properties
+TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
 # Vendor packages
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6-impl-google.vendor:64 \
