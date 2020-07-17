@@ -22,8 +22,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    libwifi-hal-qcom \
-    libwifi-hal-ctrl
+    libwifi-hal-qcom
 
 # Misc
 PRODUCT_PACKAGES += \
