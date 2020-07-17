@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig
@@ -28,7 +30,6 @@ PRODUCT_PACKAGES += \
     ese_spi_st \
     hardware.google.light@1.0.vendor \
     libcamera2ndk_vendor \
-    libcld80211 \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
     libdrm.vendor \
@@ -44,7 +45,6 @@ PRODUCT_PACKAGES += \
     libnos_transport \
     libqti_vndfwk_detect.vendor \
     libsensorndkbridge \
-    libstagefright_bufferpool@2.0.1.vendor \
     libtextclassifier_hash.vendor \
     libtinycompress \
     libtinyxml \
