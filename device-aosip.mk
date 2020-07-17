@@ -14,23 +14,16 @@
 # limitations under the License.
 #
 
-# Display
-PRODUCT_PACKAGES += \
-    libdisplayconfig
+TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
-# WiFi
-PRODUCT_PACKAGES += \
-    libwifi-hal-qcom \
-    libwifi-hal-ctrl
-
-# Misc
+# Misc packages to build
 PRODUCT_PACKAGES += \
     ese_spi_st \
     hardware.google.light@1.0.vendor \
     libcamera2ndk_vendor \
-    libcld80211 \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
+    libdisplayconfig \
     libdrm.vendor \
     libjson \
     libmedia_ecoservice.vendor \
@@ -44,10 +37,10 @@ PRODUCT_PACKAGES += \
     libnos_transport \
     libqti_vndfwk_detect.vendor \
     libsensorndkbridge \
-    libstagefright_bufferpool@2.0.1.vendor \
     libtextclassifier_hash.vendor \
     libtinycompress \
     libtinyxml \
+    libwifi-hal-qcom \
     nos_app_avb \
     nos_app_keymaster \
     nos_app_weaver \
