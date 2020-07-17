@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig
