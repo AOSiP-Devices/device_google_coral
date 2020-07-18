@@ -101,3 +101,6 @@ persist.bluetooth.bqr.event_mask=14
 persist.bluetooth.bqr.min_interval_ms=500
 
 persist.device_config.runtime_native.usap_pool_enabled=true
+
+# Missing product props
+ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
