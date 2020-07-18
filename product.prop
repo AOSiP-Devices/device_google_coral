@@ -94,3 +94,4 @@ graphics.gpu.profiler.vulkan_layer_apk=com.google.pixel.coral.gpuprofiling.vulka
 ro.com.google.clientidbase=android-google
 ro.error.receiver.system.apps=com.google.android.gms
 ro.llkd.enable=false
+ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
