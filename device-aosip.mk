@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+LOCAL_PATH := device/google/coral
+
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
 # Misc packages to build
