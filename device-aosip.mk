@@ -16,7 +16,38 @@
 
 LOCAL_PATH := device/google/coral
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/codeaurora/telephony/ims \
+    vendor/google/coral
+
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
+# EUICC
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:system/etc/permissions/android.hardware.telephony.euicc.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-aosp-extended.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-aosp-extended.xml
+
+# Google Device
+PRODUCT_PACKAGES += \
+    SystemUIGoogle
+
+# IMS/Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    telephony-ext
+
+# Native video calling
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.vt_avail_ovr=1
+
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
 
 # Misc packages to build
 PRODUCT_PACKAGES += \
@@ -43,6 +74,7 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libtinyxml \
     libwifi-hal-qcom \
+    netutils-wrapper-1.0 \
     nos_app_avb \
     nos_app_keymaster \
     nos_app_weaver \
