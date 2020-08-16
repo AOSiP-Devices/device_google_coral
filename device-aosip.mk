@@ -18,6 +18,21 @@ LOCAL_PATH := device/google/coral
 
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
+# EUICC
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:system/etc/permissions/android.hardware.telephony.euicc.xml
+
+PRODUCT_COPY_FILES += \
+    device/google/coral/permissions/privapp-permissions-aosp-extended.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-aosp-extended.xml
+
+# Google Device
+PRODUCT_PACKAGES += \
+    SystemUIGoogle
+
+# LMK
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.lmk.use_psi=true
+
 # Misc packages to build
 PRODUCT_PACKAGES += \
     ese_spi_st \

@@ -89,8 +89,6 @@ ifeq ($(wildcard vendor/google_devices/coral/proprietary/device-vendor-coral.mk)
     BUILD_WITHOUT_VENDOR := true
 endif
 
-#PRODUCT_VENDOR_KERNEL_HEADERS := device/google/coral-kernel/sm8150/kernel-headers
-
 PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_SHIPPING_API_LEVEL := 29
 
@@ -774,8 +772,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     vndk-sp
 
-#PRODUCT_ENFORCE_RRO_TARGETS := *
-
 # Override heap growth limit due to high display density on device
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapgrowthlimit=256m
@@ -966,10 +962,3 @@ endif
 # Write flags to the vendor space in /misc partition.
 PRODUCT_PACKAGES += \
     misc_writer
-
-# EUICC
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:system/etc/permissions/android.hardware.telephony.euicc.xml
-
-PRODUCT_COPY_FILES += \
-    device/google/coral/permissions/privapp-permissions-aosp-extended.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-aosp-extended.xml
