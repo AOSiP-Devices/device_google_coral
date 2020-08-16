@@ -25,13 +25,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/google/coral/permissions/privapp-permissions-aosp-extended.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-aosp-extended.xml
 
-# Google Device
-PRODUCT_PACKAGES += \
-    SystemUIGoogle
-
-# LMK
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.lmk.use_psi=true
 
 # Misc packages to build
 PRODUCT_PACKAGES += \
@@ -66,6 +59,5 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.1.vendor \
     vendor.display.config@1.2.vendor \
     vendor.display.config@1.3.vendor \
-    vendor.qti.hardware.display.allocator@3.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.0.vendor
