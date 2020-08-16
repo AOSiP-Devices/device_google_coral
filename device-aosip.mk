@@ -35,37 +35,39 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Misc packages to build
 PRODUCT_PACKAGES += \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     ese_spi_st \
     hardware.google.light@1.0.vendor \
     libcamera2ndk_vendor \
-    libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.0.vendor:32 \
     libcodec2_vndk.vendor \
     libdisplayconfig \
     libdrm.vendor \
+    libgptutils \
     libjson \
     libmedia_ecoservice.vendor \
-    libnetfilter_conntrack \
-    libnfnetlink \
-    libnos \
-    libnos_client_citadel \
-    libnos_datagram \
-    libnos_datagram_citadel \
-    libnosprotos \
-    libnos_transport \
+    libnetfilter_conntrack:64 \
+    libnfnetlink:64 \
+    libnos_client_citadel:64 \
+    libnos_datagram_citadel:64 \
+    libnos_datagram:64 \
+    libnosprotos:64 \
+    libnos:64 \
+    libnos_transport:64 \
     libqti_vndfwk_detect.vendor \
     libsensorndkbridge \
-    libtextclassifier_hash.vendor \
+    libtextclassifier_hash.vendor:64 \
     libtinycompress \
     libtinyxml \
     libwifi-hal-qcom \
-    nos_app_avb \
-    nos_app_keymaster \
-    nos_app_weaver \
+    nos_app_avb:64 \
+    nos_app_keymaster:64 \
+    nos_app_weaver:64 \
     sound_trigger.primary.msmnile \
     vendor.display.config@1.0.vendor \
     vendor.display.config@1.1.vendor \
     vendor.display.config@1.2.vendor \
     vendor.display.config@1.3.vendor \
-    vendor.qti.hardware.display.allocator@3.0.vendor \
+    vendor.qti.hardware.display.allocator@3.0.vendor:64 \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.0.vendor
