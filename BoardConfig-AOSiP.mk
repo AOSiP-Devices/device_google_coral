@@ -15,3 +15,5 @@
 #
 
 -include vendor/google/coral/BoardConfigVendor.mk
+
+BOARD_KERNEL_IMAGE_NAME := Image.lz4
