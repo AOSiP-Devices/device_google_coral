@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 -include vendor/google/coral/BoardConfigVendor.mk
 
 BOARD_KERNEL_IMAGE_NAME := Image.lz4
