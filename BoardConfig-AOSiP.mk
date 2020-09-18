@@ -31,9 +31,23 @@ TARGET_KERNEL_CONFIG := floral_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/floral
 TARGET_NEEDS_DTBOIMAGE := true
 
+DEVICE_MANIFEST_FILE += \
+    device/google/coral/manifest/android.hardware.gnss@2.0-service-qti.xml \
+    device/google/coral/manifest/manifest_face.xml \
+    device/google/coral/manifest/manifest_wifi_ext.xml \
+    device/google/coral/manifest/android.hardware.identity.strongbox.xml \
+    device/google/coral/manifest/android.hardware.keymaster@4.1-service.citadel.xml \
+    device/google/coral/manifest/android.hardware.weaver@1.0-service.citadel.xml \
+    device/google/coral/manifest/manifest_input.classifier-service.xml \
+    device/google/coral/manifest/rebootescrow-citadel.xml \
+    device/google/coral/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml \
+
+DEVICE_FRAMEWORK_MANIFEST_FILE += \
+    device/google/coral/manifest/vendor.qti.hardware.radio.atcmdfwd@1.0.xml \
+
 # Partitions
 ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
-    BOARD_VENDORIMAGE_PARTITION_SIZE := 744660992
+BOARD_VENDORIMAGE_PARTITION_SIZE := 744660992
 endif
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
