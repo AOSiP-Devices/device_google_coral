@@ -716,7 +716,7 @@ vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
+-vendor/lib64/libadsprpc.so
 vendor/lib64/lib_aion_buffer.so
 vendor/lib64/libairbrush-pixel.so
 vendor/lib64/libAlacSwDec.so
@@ -1154,7 +1154,7 @@ vendor/lib/libadm.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsprpc.so
+-vendor/lib/libadsprpc.so
 vendor/lib/lib_aion_buffer.so
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
