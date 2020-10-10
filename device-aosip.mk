@@ -54,6 +54,8 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libcppbor.vendor:64 \
     libdrm.vendor \
+    libgooglecamerahal.vendor:32 \
+    libgooglecamerahalutils.vendor:32 \
     libhidltransport \
     libhidltransport.product:32 \
     libhidltransport.vendor \
@@ -78,6 +80,7 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libtinyxml \
     libvndfwk_detect_jni.qti.vendor \
+    libwifi-hal:64 \
     libwifi-hal-qcom \
     nos_app_avb:64 \
     nos_app_identity:64 \

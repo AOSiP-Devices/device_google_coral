@@ -1005,7 +1005,6 @@ vendor/lib64/libultradepth_api.so
 vendor/lib64/libvd6281.so
 vendor/lib64/libVkLayer_q3dtools.so
 vendor/lib64/libvsc.so
-vendor/lib64/libwifi-hal.so
 vendor/lib64/libwlcproto.so
 vendor/lib64/libwms.so
 vendor/lib64/libwqe.so
@@ -1227,8 +1226,6 @@ vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/libgnsspps.so
-vendor/lib/libgooglecamerahal.so
-vendor/lib/libgooglecamerahalutils.so
 vendor/lib/libgoog_llv_gpu.so
 vendor/lib/libGPQTEEC_vendor.so
 vendor/lib/libGPreqcancel.so
