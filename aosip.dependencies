@@ -13,5 +13,11 @@
    "repository":  "vendor_google",
    "target_path": "vendor/google",
    "branch":      "eleven"
+  },
+  {
+   "remote":      "github",
+   "repository":  "AOSiP/platform_packages_apps_ElmyraService",
+   "target_path": "packages/apps/ElmyraService",
+   "branch":      "eleven"
  }
 ]
