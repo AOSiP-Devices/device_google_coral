@@ -39,6 +39,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 AB_OTA_PARTITIONS += \
     vendor
 
+# Parts
+PRODUCT_PACKAGES += \
+    GoogleParts
+
 # Permissions
 PRODUCT_COPY_FILES += \
     device/google/coral/permissions/privapp-permissions-aosp-extended.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-aosp-extended.xml
