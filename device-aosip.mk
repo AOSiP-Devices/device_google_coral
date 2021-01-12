@@ -46,6 +46,10 @@ PRODUCT_COPY_FILES += \
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/commonsys-intf/display
+
 # Vendor packages
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6-impl-google.vendor:64 \
