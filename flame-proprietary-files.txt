@@ -183,7 +183,6 @@ product/lib/vendor.qti.imsrtpservice@3.0.so
 -product/priv-app/CarrierWifi/CarrierWifi.apk;PRESIGNED
 -product/priv-app/ConnMO/ConnMO.apk
 -product/priv-app/DCMO/DCMO.apk
--product/priv-app/DevicePersonalizationPrebuiltPixel4/DevicePersonalizationPrebuiltPixel4.apk;PRESIGNED
 -product/priv-app/DiagMon/DiagMon.apk
 -product/priv-app/DMService/DMService.apk
 -product/priv-app/DreamlinerPrebuilt/DreamlinerPrebuilt.apk;PRESIGNED
