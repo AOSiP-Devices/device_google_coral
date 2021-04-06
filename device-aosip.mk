@@ -70,6 +70,7 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.0.vendor:32 \
     libcodec2_vndk.vendor \
     libcppbor.vendor:64 \
+    libdisplayconfig.qti.vendor \
     libdrm.vendor \
     libgooglecamerahal.vendor:32 \
     libgooglecamerahalutils.vendor:32 \
@@ -137,4 +138,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.0.vendor \
-    vendor.qti.hardware.display.mapperextensions@1.1.vendor
+    vendor.qti.hardware.display.mapperextensions@1.1.vendor \
+    vendor.qti.hardware.perf@1.0.vendor \
+    vendor.qti.hardware.perf@2.0.vendor
