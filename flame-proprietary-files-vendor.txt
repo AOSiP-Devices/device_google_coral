@@ -1492,6 +1492,7 @@ vendor/radio/qcril_database/upgrade/13_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/14_add_fr_normal_ecc.sql
 vendor/radio/qcril_database/upgrade/15_fr_normal_ecc_on_wifi.sql
 vendor/radio/qcril_database/upgrade/16_ch_normal_ecc.sql
+vendor/radio/qcril_database/upgrade/17_in_normal_ecc.sql
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_hw/generic/Pixel/common/SM8150/LA/7+7_mode/pixel_SR_DSDS/mcfg_hw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_hw/generic/Pixel/common/SM8150/LA/pixel_SS_APQ_only/mcfg_hw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_hw/generic/Pixel/common/SM8150/LA/pixel_SS/mcfg_hw.mbn
